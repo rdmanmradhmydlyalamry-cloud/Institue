@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معهد الرواد الدولي للتدريب والتكنولوجيا | Al-Rowad Institute</title>
+  
+  <!-- خط كوفي وعربي حديث (Cairo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- مكتبة الأيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- ملف التنسيق -->
+  <link rel="stylesheet" href="Institute.css">
+</head>
+<body>
+
+  <!-- ======================================================
+       1. شريط التنقل العلوي (Navbar)
+       ====================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+          <h1>معهد الرواد الدولي</h1>
+          <span>للغات والعلوم والتكنولوجيا</span>
+        </div>
+      </a>
+
+      <!-- روابط القائمة (تعمل كصفحات مستقلة) -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active"><i class="fas fa-home"></i> الرئيسية</a>
+        <a href="#grades"><i class="fas fa-poll-h"></i> نتائج الطلاب</a>
+        <a href="#elearning"><i class="fas fa-laptop-code"></i> التعلم أونلاين</a>
+        <a href="#courses"><i class="fas fa-book-open"></i> دليل الدورات</a>
+        <a href="#features"><i class="fas fa-award"></i> مميزاتنا</a>
+        <a href="#admission"><i class="fas fa-user-plus"></i> التسجيل</a>
+        <a href="#contact"><i class="fas fa-headset"></i> اتصل بنا</a>
+      </nav>
+
+      <!-- إجراءات الشريط العلوي -->
+      <div class="nav-actions">
+        <!-- زر الوضع الليلي/النهاري -->
+        <button class="theme-toggle" id="themeToggle" title="تبديل الوضع">
+          <i class="fas fa-moon"></i>
+        </button>
+        <!-- زر التسجيل المباشر -->
+        <a href="#admission" class="btn btn-accent">سجل الآن</a>
+        <!-- زر القائمة للهواتف -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       الصفحة 1: الرئيسية (Home Page)
+       ====================================================== -->
+  <div id="home" class="page-section active-page">
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fas fa-shield-alt"></i> معهد تدريبي معتمد ومرخص رسمياً
+          </div>
+          <h2>بوابتك المتكاملة نحو <span>الاحتراف وسوق العمل</span> الحديث</h2>
+          <p>
+            يقدم معهد الرواد الدولي أحدث البرامج التدريبية المعتمدة في تقنية المعلومات، البرمجة، الأمن السيبراني، اللغات، وإدارة الأعمال، مع منظومة تعليمية إلكترونية متطورة للاستعلام عن الدرجات والمحاضرات الرقمية.
+          </p>
+          <div class="hero-btns">
+            <a href="#admission" class="btn btn-primary"><i class="fas fa-user-graduate"></i> التسجيل في دورة</a>
+            <a href="#grades" class="btn btn-outline"><i class="fas fa-search"></i> كشف درجات الطلاب</a>
+            <a href="#elearning" class="btn btn-accent"><i class="fas fa-play-circle"></i> منصة المحاضرات</a>
+          </div>
+        </div>
+
+        <!-- بطاقة البوابات السريعة في الواجهة -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <h4><i class="fas fa-compass" style="color:var(--accent);"></i> الخدمات والأنظمة الإلكترونية</h4>
+              <span style="font-size:0.8rem; color:var(--success); font-weight:700;"><i class="fas fa-circle"></i> النظام متاح 24/7</span>
+            </div>
+            <div class="quick-portal-list">
+              <a href="#grades" class="portal-item">
+                <div class="portal-info">
+                  <div class="portal-icon"><i class="fas fa-file-invoice"></i></div>
+                  <div>
+                    <strong>بوابة الاستعلام عن النتائج</strong>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">معاينة الدرجات والمعدل التراكمي فوراً</p>
+                  </div>
+                </div>
+                <i class="fas fa-chevron-left" style="color:var(--text-muted);"></i>
+              </a>
+
+              <a href="#elearning" class="portal-item">
+                <div class="portal-info">
+                  <div class="portal-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                  <div>
+                    <strong>الفصول الافتراضية والمحاضرات</strong>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">شاهد الدروس وسجّل حضورك أونلاين</p>
+                  </div>
+                </div>
+                <i class="fas fa-chevron-left" style="color:var(--text-muted);"></i>
+              </a>
+
+              <a href="#admission" class="portal-item">
+                <div class="portal-info">
+                  <div class="portal-icon"><i class="fas fa-id-card"></i></div>
+                  <div>
+                    <strong>القبول والتسجيل الإلكتروني</strong>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">التحق بالدورات واحصل على مقعدك</p>
+                  </div>
+                </div>
+                <i class="fas fa-chevron-left" style="color:var(--text-muted);"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- شريط إحصائيات المعهد -->
+    <div class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-box">
+          <h3>+12,500</h3>
+          <p>طالب وخريج متميز</p>
+        </div>
+        <div class="stat-box">
+          <h3>+48</h3>
+          <p>دورة وبرنامج تدريبي معتمد</p>
+        </div>
+        <div class="stat-box">
+          <h3>96%</h3>
+          <p>نسبة التوظيف والجاهزية</p>
+        </div>
+        <div class="stat-box">
+          <h3>+15</h3>
+          <p>عاماً من الريادة والتميز</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       الصفحة 2: استعلام درجات الطلاب (Grades Page)
+       ====================================================== -->
+  <section class="grades-section page-section" id="grades">
+    <div class="container">
+      <div class="section-title">
+        <span>بوابة النتائج الأكاديمية</span>
+        <h2>الاستعلام عن درجات ونتائج الطلاب</h2>
+        <p>أدخل رقم القيد الأكاديمي أو رقم الجلوس لمعاينة كشف درجاتك التفصيلي والمعدل العام</p>
+      </div>
+
+      <!-- مربع البحث عن النتيجة -->
+      <div class="search-wrapper">
+        <div class="search-box">
+          <input type="text" id="studentIdInput" placeholder="أدخل رقم القيد الأكاديمي (مثال: 202401)...">
+          <button class="btn btn-primary" id="searchGradeBtn"><i class="fas fa-search"></i> عرض النتيجة</button>
+        </div>
+        <div class="demo-ids">
+          <span>أرقام تجريبية جاهزة للاختبار:</span>
+          <span class="demo-badge" data-id="202401">202401 (طالب متميز)</span>
+          <span class="demo-badge" data-id="202402">202402 (أمن سيبراني)</span>
+          <span class="demo-badge" data-id="202403">202403 (تصميم جرافيك)</span>
+        </div>
+      </div>
+
+      <!-- بطاقة النتيجة وكشف الدرجات (تظهر تفاعلياً عبر JS) -->
+      <div class="result-card" id="resultCard">
+        <div class="result-header">
+          <div>
+            <h3 style="font-size:1.3rem; margin-bottom:4px;" id="resStudentName">ردمان عبده مصلح العامري</h3>
+            <span style="color:var(--text-muted); font-size:0.9rem;">كشف الدرجات والنتائج الرسمية - معهد الرواد الدولي</span>
+          </div>
+          <span class="student-badge-status status-excellent" id="resStudentStatus">ناجح بتفوق</span>
+        </div>
+
+        <!-- بيانات الطالب -->
+        <div class="student-meta-grid">
+          <div class="meta-box">
+            <span>رقم القيد الأكاديمي:</span>
+            <strong id="resStudentId">202401</strong>
+          </div>
+          <div class="meta-box">
+            <span>التخصص / البرنامج التدريبي:</span>
+            <strong id="resStudentSpecialty">دبلوم هندسة وتطوير الويب المتكامل</strong>
+          </div>
+          <div class="meta-box">
+            <span>المستوى الدراسي:</span>
+            <strong id="resStudentLevel">المستوى الثاني - الفصل الدراسي الثاني</strong>
+          </div>
+        </div>
+
+        <!-- جدول درجات المواد -->
+        <div class="grades-table-wrapper">
+          <table class="grades-table">
+            <thead>
+              <tr>
+                <th>اسم المادة / المقرر</th>
+                <th>الدرجة العظمى</th>
+                <th>درجة الطالب</th>
+                <th>التقدير</th>
+                <th>الحالة</th>
+              </tr>
+            </thead>
+            <tbody id="resGradesTableBody">
+              <!-- سيتم ملؤها بالجافاسكريبت -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ملخص المعدل العام -->
+        <div class="result-footer-summary">
+          <div class="total-score-info">
+            <span style="font-size:0.85rem; color:var(--text-muted);">المعدل العام التراكمي:</span>
+            <h4 id="resTotalAverage">95.0%</h4>
+          </div>
+          <div class="total-score-info">
+            <span style="font-size:0.85rem; color:var(--text-muted);">المعدل الفصلي (GPA):</span>
+            <h4 id="resGPA">3.95 / 4.00</h4>
+          </div>
+          <div class="total-score-info">
+            <span style="font-size:0.85rem; color:var(--text-muted);">التقدير العام:</span>
+            <h4 id="resStanding" style="color:var(--success);">ممتاز مع مرتبة الشرف الأولى</h4>
+          </div>
+        </div>
+
+        <!-- أزرار الإجراءات على النتيجة -->
+        <div class="result-actions">
+          <button class="btn btn-outline" onclick="window.print()"><i class="fas fa-print"></i> طباعة كشف الدرجات</button>
+          <button class="btn btn-primary" onclick="alert('تم إرسال نسخة الكشف إلى بريدك الإلكتروني بنجاح!')"><i class="fas fa-download"></i> تصدير الشهادة PDF</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       الصفحة 3: التعلم أونلاين والمحاضرات (E-Learning Page)
+       ====================================================== -->
+  <section class="online-learning-section page-section" id="elearning">
+    <div class="container">
+      <div class="section-title">
+        <span>المنصة التعليمية الرقمية</span>
+        <h2>التعلم عن بُعد والمحاضرات المسجلة</h2>
+        <p>تابع محاضراتك وتدريباتك العملية من أي مكان مع إمكانية تحميل ملخصات الدروس والكتب بصيغة PDF</p>
+      </div>
+
+      <div class="platform-layout">
+        <!-- مشغل المحاضرة المرئي -->
+        <div class="video-player-card">
+          <div class="video-wrapper">
+            <video id="mainLectureVideo" controls poster="impj/web.jpg">
+              <source src="voide/%D8%B1%D9%8A%D9%85%D9%83%D8%B3-REMIX-%D8%B2%D8%A7%D9%85%D9%84_%F0%9F%8E%A7_%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D9%88%D8%B1_%F0%9F%8E%A7_%D8%AD%D8%B5%D8%B1%D9%8A%D8%A7%D9%8B_2023-_%D8%A.mp4" type="video/mp4">
+              متصفحك لا يدعم مشغل الفيديو المباشر.
+            </video>
+          </div>
+          <div class="video-details">
+            <h3 id="mainVideoTitle">المحاضرة 1: مدخل إلى تطوير تطبيقات الويب والواجهات الأمامية</h3>
+            <p id="mainVideoDesc">
+              تتضمن هذه المحاضرة شرحاً شاملاً لبنية صفحات HTML5 الحديثة، وقواعد التنسيق عبر CSS3، والربط البرمجي التفاعلي باستخدام JavaScript.
+            </p>
+            <div class="video-tags">
+              <span class="video-tag"><i class="fas fa-clock"></i> 45 دقيقة</span>
+              <span class="video-tag"><i class="fas fa-chalkboard-teacher"></i> المدرب: م. ردمان العامري</span>
+              <span class="video-tag"><i class="fas fa-check-double"></i> معمل تطبيقي مباشر</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- قائمة المحاضرات والملفات المرفقة -->
+        <div class="playlist-card">
+          <div class="playlist-header">
+            <h4><i class="fas fa-list-ul" style="color:var(--accent);"></i> فهرس المحاضرات</h4>
+            <span style="font-size:0.8rem; color:var(--text-muted);">4 محاضرات متوفرة</span>
+          </div>
+
+          <div class="playlist-list">
+            <div class="playlist-item active" data-title="المحاضرة 1: مدخل إلى تطوير تطبيقات الويب والواجهات الأمامية" data-desc="تتضمن هذه المحاضرة شرحاً شاملاً لبنية صفحات HTML5 الحديثة، وتنسيق CSS3، والربط البرمجي." data-video="voide/%D8%B1%D9%8A%D9%85%D9%83%D8%B3-REMIX-%D8%B2%D8%A7%D9%85%D9%84_%F0%9F%8E%A7_%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D9%88%D8%B1_%F0%9F%8E%A7_%D8%AD%D8%B5%D8%B1%D9%8A%D8%A7%D9%8B_2023-_%D8%A.mp4">
+              <div class="lecture-num">01</div>
+              <div class="lecture-info">
+                <h5>مقدمة الويب و HTML5 المعيارية</h5>
+                <span><i class="fas fa-play"></i> قيد المشاهدة</span>
+              </div>
+            </div>
+
+            <div class="playlist-item" data-title="المحاضرة 2: تنسيقات CSS3 والشبكات المرنة Flexbox و Grid" data-desc="شرح تفصيلي لكيفية جعل الصفحات متجاوبة تماماً مع الهواتف الذكية وتطبيق المؤثرات البصرية." data-video="">
+              <div class="lecture-num">02</div>
+              <div class="lecture-info">
+                <h5>التنسيقات المتقدمة والتصميم المتجاوب</h5>
+                <span><i class="fas fa-clock"></i> 50 دقيقة</span>
+              </div>
+            </div>
+
+            <div class="playlist-item" data-title="المحاضرة 3: البرمجة التفاعلية بالجافاسكريبت وربط النماذج" data-desc="كيفية بناء نماذج تحقق ذكية ومعالجة البيانات محلياً بدون إعادة تحميل الصفحة." data-video="">
+              <div class="lecture-num">03</div>
+              <div class="lecture-info">
+                <h5>جافاسكريبت والأنظمة التفاعلية (DOM)</h5>
+                <span><i class="fas fa-clock"></i> 60 دقيقة</span>
+              </div>
+            </div>
+
+            <div class="playlist-item" data-title="المحاضرة 4: إطلاق المشروع العملي وربط قواعد البيانات" data-desc="خطوات نشر الموقع على خادم سحابي وإدارة ملفات المشروع وحمايتها." data-video="">
+              <div class="lecture-num">04</div>
+              <div class="lecture-info">
+                <h5>المشروع العملي النهائي والتقييم</h5>
+                <span><i class="fas fa-clock"></i> 40 دقيقة</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- قائمة ملخصات ومصادر PDF الدراسية -->
+          <div class="materials-list">
+            <h5 style="font-size:0.95rem; margin-bottom:8px;"><i class="fas fa-file-pdf" style="color:var(--danger);"></i> المواد والمذكرات الدراسية (PDF):</h5>
+            
+            <div class="material-item">
+              <span><i class="fas fa-book"></i> ملخص تقنيات الويب الحديثة</span>
+              <a href="#" onclick="alert('جاري تحميل مذكرة تقنيات الويب...'); return false;"><i class="fas fa-download"></i> تحميل (3.4 MB)</a>
+            </div>
+
+            <div class="material-item">
+              <span><i class="fas fa-code"></i> شفرات وأكواد التمارين العملية</span>
+              <a href="#" onclick="alert('جاري تحميل ملف الأكواد...'); return false;"><i class="fas fa-download"></i> تحميل (1.8 MB)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       الصفحة 4: دليل الدورات والبرامج (Courses Page)
+       ====================================================== -->
+  <section class="courses-section page-section" id="courses">
+    <div class="container">
+      <div class="section-title">
+        <span>برامجنا الأكاديمية</span>
+        <h2>دليل الدورات والبرامج المعتمدة</h2>
+        <p>اختر الدورة التدريبية المناسبة لتطوير مهاراتك وابدأ مسارك المهني مع نخبة من الخبراء</p>
+      </div>
+
+      <!-- تصنيفات الدورات -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">جميع البرامج</button>
+        <button class="filter-btn" data-filter="prog">البرمجة والويب</button>
+        <button class="filter-btn" data-filter="cyber">الأمن السيبراني</button>
+        <button class="filter-btn" data-filter="design">التصميم والمونتاج</button>
+        <button class="filter-btn" data-filter="lang">اللغات والترجمة</button>
+      </div>
+
+      <!-- شبكة بطاقات الدورات -->
+      <div class="courses-grid">
+
+        <!-- دورة 1 -->
+        <div class="course-card" data-category="prog">
+          <div class="course-img" style="background: linear-gradient(135deg, #1e3a8a, #3b82f6); display:flex; align-items:center; justify-content:center;">
+            <i class="fas fa-laptop-code" style="font-size:4rem; color:rgba(255,255,255,0.8);"></i>
+            <span class="course-category-badge">برمجة وويب</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-calendar-alt"></i> 4 أشهر (120 ساعة)</span>
+              <span><i class="fas fa-star" style="color:var(--accent);"></i> 4.9 (120 تقييم)</span>
+            </div>
+            <h3 class="course-title">دبلوم هندسة وتطوير الويب الكامل (Full-Stack)</h3>
+            <p class="course-desc">
+              تعلّم تطوير الواجهات الأمامية والخلفية باستخدام HTML5, CSS3, JavaScript, Node.js وقواعد البيانات لتصبح مطور ويب متكامل.
+            </p>
+            <div class="course-footer">
+              <span class="course-price">$180 <small style="font-size:0.75rem; color:var(--text-muted); text-decoration:line-through;">$250</small></span>
+              <a href="#admission" class="btn btn-primary enroll-course-btn" data-course-title="دبلوم هندسة وتطوير الويب الكامل (Full-Stack)">سجل الآن</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- دورة 2 -->
+        <div class="course-card" data-category="cyber">
+          <div class="course-img" style="background: linear-gradient(135deg, #0f172a, #334155); display:flex; align-items:center; justify-content:center;">
+            <i class="fas fa-user-shield" style="font-size:4rem; color:rgba(255,255,255,0.8);"></i>
+            <span class="course-category-badge">أمن وحماية</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-calendar-alt"></i> 3 أشهر (90 ساعة)</span>
+              <span><i class="fas fa-star" style="color:var(--accent);"></i> 4.8 (85 تقييم)</span>
+            </div>
+            <h3 class="course-title">الأمن السيبراني والاختراق الأخلاقي (Cybersecurity)</h3>
+            <p class="course-desc">
+              حماية الشبكات والأنظمة، فحص الثغرات الأمنية، واحتراف بروتوكولات الأمان السحابي والجدران النارية المتقدمة.
+            </p>
+            <div class="course-footer">
+              <span class="course-price">$220 <small style="font-size:0.75rem; color:var(--text-muted); text-decoration:line-through;">$300</small></span>
+              <a href="#admission" class="btn btn-primary enroll-course-btn" data-course-title="الأمن السيبراني والاختراق الأخلاقي (Cybersecurity)">سجل الآن</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- دورة 3 -->
+        <div class="course-card" data-category="design">
+          <div class="course-img" style="background: linear-gradient(135deg, #7c3aed, #c084fc); display:flex; align-items:center; justify-content:center;">
+            <i class="fas fa-palette" style="font-size:4rem; color:rgba(255,255,255,0.8);"></i>
+            <span class="course-category-badge">تصميم وفنون</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-calendar-alt"></i> شهرين (60 ساعة)</span>
+              <span><i class="fas fa-star" style="color:var(--accent);"></i> 5.0 (98 تقييم)</span>
+            </div>
+            <h3 class="course-title">التصميم الجرافيكي والموشن جرافيك الإعلاني</h3>
+            <p class="course-desc">
+              احتراف برامج أدوبي Photoshop, Illustrator, After Effects وصناعة الهويات التجارية والفيديوهات الترويجية.
+            </p>
+            <div class="course-footer">
+              <span class="course-price">$140 <small style="font-size:0.75rem; color:var(--text-muted); text-decoration:line-through;">$190</small></span>
+              <a href="#admission" class="btn btn-primary enroll-course-btn" data-course-title="التصميم الجرافيكي والموشن جرافيك الإعلاني">سجل الآن</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- دورة 4 -->
+        <div class="course-card" data-category="lang">
+          <div class="course-img" style="background: linear-gradient(135deg, #0d9488, #2dd4bf); display:flex; align-items:center; justify-content:center;">
+            <i class="fas fa-language" style="font-size:4rem; color:rgba(255,255,255,0.8);"></i>
+            <span class="course-category-badge">لغات دولية</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-calendar-alt"></i> 6 أشهر (6 مستويات)</span>
+              <span><i class="fas fa-star" style="color:var(--accent);"></i> 4.9 (210 تقييم)</span>
+            </div>
+            <h3 class="course-title">دبلوم اللغة الإنجليزية المتقدم (IELTS & TOEFL Prep)</h3>
+            <p class="course-desc">
+              تطوير مهارات التحدث بطلاقة، الكتابة الأكاديمية، والتحضير لاجتياز اختبارات التوفل والآيلتس العالمية بنجاح.
+            </p>
+            <div class="course-footer">
+              <span class="course-price">$150 <small style="font-size:0.75rem; color:var(--text-muted); text-decoration:line-through;">$220</small></span>
+              <a href="#admission" class="btn btn-primary enroll-course-btn" data-course-title="دبلوم اللغة الإنجليزية المتقدم (IELTS & TOEFL Prep)">سجل الآن</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       الصفحة 5: مميزات المعهد (Features Page)
+       ====================================================== -->
+  <section class="features-section page-section" id="features">
+    <div class="container">
+      <div class="section-title">
+        <span>بيئة تعليمية مثالية</span>
+        <h2>لماذا يختار الطلاب معهد الرواد؟</h2>
+        <p>نحرص على تزويد الطالب بكافة الأدوات المعرفية والتطبيقية لضمان تفوقه المهني</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+          <h4>شهادات معتمدة</h4>
+          <p>شهادات موثقة ومعتمدة من الجهات الرسمية تمنحك أولوية القبول في كبرى الشركات والمؤسسات.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h4>كادر تدريبي نخبوي</h4>
+          <p>مدربون ومهندسون ممارسون في سوق العمل يمتلكون خبرات عميقة في نقل المعرفة بأسلوب عملي شيق.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+          <h4>معامل حاسوب حديثة</h4>
+          <p>أجهزة متطورة وشبكات فائقة السرعة توفر للطالب بيئة عمل حقيقية تحاكي كبرى بيئات التطوير العالمية.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>منصة ومتابعة إلكترونية</h4>
+          <p>نظام إلكتروني متكامل يتيح لك الاستعلام عن النتائج، ومراجعة المحاضرات المسجلة في أي وقت ومن أي جهاز.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       الصفحة 6: بوابة القبول والتسجيل الإلكتروني (Admission Page)
+       ====================================================== -->
+  <section class="admission-section page-section" id="admission">
+    <div class="container">
+      <div class="section-title">
+        <span>الانضمام والالتحاق</span>
+        <h2>نموذج التسجيل الإلكتروني للطلاب</h2>
+        <p>قم بتعبئة بياناتك بدقة لتحصل على رقم تسجيل رسمي وسند القبول في المعهد فوراً</p>
+      </div>
+
+      <div class="admission-wrapper">
+        <!-- لوحة التعليمات والمزايا -->
+        <div class="admission-info-panel">
+          <div>
+            <span style="color:var(--accent); font-weight:700;">تسجيل دورة جديدة</span>
+            <h3>انضم إلى عائلة الرواد وابدأ رحلتك التعليمية</h3>
+            <p>
+              يضمن لك التسجيل عبر موقعنا حجز مقعدك في الشعبة التدريبية والحصول على خصم 25% خاص بالتسجيل الإلكتروني.
+            </p>
+
+            <div class="admission-benefits">
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>شهادات معتمدة محلياً ودولياً صادرة من وزارة التعليم الفني</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>تطبيق عملي في معامل مجهزة بأحدث أجهزة الحواسيب والإنترنت السريع</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>حساب رسمي على منصة التعلم أونلاين لمشاهدة التسجيلات في أي وقت</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>متابعة أكاديمية مستمرة واختبارات دورية مع تقارير أداء للطلاب</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size:0.9rem; opacity:0.9;">
+            <i class="fas fa-phone-alt"></i> للاستفسارات المباشرة: <strong>+967 783362528</strong>
+          </div>
+        </div>
+
+        <!-- استمارة التسجيل -->
+        <div class="admission-form-panel">
+          <form id="registrationForm">
+            <div class="form-grid">
+              
+              <div class="form-group full-width">
+                <label for="studentNameInput">الاسم الرباعي للطالب *</label>
+                <input type="text" id="studentNameInput" class="form-control" placeholder="مثال: ردمان عبده مصلح العامري" required>
+              </div>
+
+              <div class="form-group">
+                <label for="nationalIdInput">الرقم الوطني / الهوية الشخصية *</label>
+                <input type="text" id="nationalIdInput" class="form-control" placeholder="أدخل رقم الهوية أو جواز السفر" required>
+              </div>
+
+              <div class="form-group">
+                <label for="studentPhoneInput">رقم الهاتف (WhatsApp) *</label>
+                <input type="tel" id="studentPhoneInput" class="form-control" placeholder="مثال: 783362528" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="studentEmailInput">البريد الإلكتروني *</label>
+                <input type="email" id="studentEmailInput" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="courseSelect">اختر الدورة التدريبية المطلوبة *</label>
+                <select id="courseSelect" class="form-control" required>
+                  <option value="" disabled selected>-- اختر من قائمة الدورات المتاحة --</option>
+                  <option value="دبلوم هندسة وتطوير الويب الكامل (Full-Stack)">دبلوم هندسة وتطوير الويب الكامل (Full-Stack)</option>
+                  <option value="الأمن السيبراني والاختراق الأخلاقي (Cybersecurity)">الأمن السيبراني والاختراق الأخلاقي (Cybersecurity)</option>
+                  <option value="التصميم الجرافيكي والموشن جرافيك الإعلاني">التصميم الجرافيكي والموشن جرافيك الإعلاني</option>
+                  <option value="دبلوم اللغة الإنجليزية المتقدم (IELTS & TOEFL Prep)">دبلوم اللغة الإنجليزية المتقدم (IELTS & TOEFL Prep)</option>
+                  <option value="الذكاء الاصطناعي وتحليل البيانات (AI & Data Science)">الذكاء الاصطناعي وتحليل البيانات (AI & Data Science)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="shiftSelect">الفترة المفضلة للدراسة *</label>
+                <select id="shiftSelect" class="form-control" required>
+                  <option value="الفترة الصباحية (9:00 ص - 11:00 ص)">الفترة الصباحية (9:00 ص - 11:00 ص)</option>
+                  <option value="فترة الظهيرة (2:00 م - 4:00 م)">فترة الظهيرة (2:00 م - 4:00 م)</option>
+                  <option value="الفترة المسائية (4:30 م - 6:30 م)">الفترة المسائية (4:30 م - 6:30 م)</option>
+                  <option value="الفترة الليلية (6:30 م - 8:30 م)">الفترة الليلية (6:30 م - 8:30 م)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="studyModeSelect">نظام الحضور *</label>
+                <select id="studyModeSelect" class="form-control" required>
+                  <option value="حضوري في مقر المعهد">حضوري في قاعات ومعامل المعهد</option>
+                  <option value="أونلاين عن بُعد (عبر المنصة)">أونلاين عن بُعد (عبر المنصة الرقمية)</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width" style="margin-top:10px;">
+                <button type="submit" class="btn btn-primary" style="width:100%; padding:14px; font-size:1.1rem;">
+                  <i class="fas fa-paper-plane"></i> إرسال طلب التسجيل واستلام سند القبول
+                </button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       نافذة إشعار وسند القبول التفاعلية (Modal Receipt)
+       ====================================================== -->
+  <div class="modal-overlay" id="receiptModal">
+    <div class="receipt-card">
+      <div class="receipt-header">
+        <div class="receipt-icon"><i class="fas fa-check"></i></div>
+        <h3 style="font-size:1.5rem; color:var(--primary); margin-bottom:5px;">تم تسجيل طلبك بنجاح!</h3>
+        <p style="color:var(--text-muted); font-size:0.9rem;">أهلاً بك في معهد الرواد الدولي. هذا هو سند تسجيلك المبدئي:</p>
+      </div>
+
+      <div class="receipt-details">
+        <div><strong>رقم طلب التسجيل:</strong> <span id="rcpAppNumber" style="color:var(--primary); font-weight:800;">ALR-782190</span></div>
+        <div><strong>اسم الطالب:</strong> <span id="rcpStudentName">--</span></div>
+        <div><strong>الدورة المختارة:</strong> <span id="rcpCourse">--</span></div>
+        <div><strong>الفترة المحددة:</strong> <span id="rcpShift">--</span></div>
+        <div><strong>تاريخ تقديم الطلب:</strong> <span id="rcpDate">--</span></div>
+        <div><strong>حالة الطلب:</strong> <span style="color:var(--success); font-weight:700;"><i class="fas fa-clock"></i> تم الحجز - بانتظار تأكيد الدفع</span></div>
+      </div>
+
+      <div style="display:flex; gap:10px; justify-content:center; margin-top:20px;">
+        <button class="btn btn-outline" onclick="window.print()"><i class="fas fa-print"></i> طباعة السند</button>
+        <button class="btn btn-primary" id="closeReceiptBtn"><i class="fas fa-times"></i> إغلاق ومتابعة التصفح</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       الصفحة 7: تواصل معنا (Contact Page)
+       ====================================================== -->
+  <section class="contact-section page-section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <span>فريقنا في خدمتك دائماً</span>
+        <h2>تواصل معنا وسجل زيارتك</h2>
+        <p>يسعدنا الإجابة على كافة استفساراتكم حول البرامج التدريبية ومواعيد التسجيل</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- معلومات الاتصال -->
+        <div class="contact-info-cards">
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-card-text">
+              <h5>مقر المعهد الرئيسي</h5>
+              <p>اليمن، صنعاء - شارع حدة - أمام برج الرواد التكنولوجي</p>
+            </div>
+          </div>
+
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-card-text">
+              <h5>أرقام الاتصال وخدمة العملاء</h5>
+              <p>هاتف: +967 783362528 | أرضي: 01-445566</p>
+            </div>
+          </div>
+
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+            <div class="contact-card-text">
+              <h5>البريد الإلكتروني الرسمي</h5>
+              <p>info@alrowad-institute.edu.ye</p>
+            </div>
+          </div>
+
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-business-time"></i></div>
+            <div class="contact-card-text">
+              <h5>ساعات وأوقات الدوام</h5>
+              <p>السبت إلى الخميس: 8:00 صباحاً حتى 8:30 مساءً</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- نموذج إرسال رسالة سريعة -->
+        <div class="search-wrapper" style="margin:0; max-width:none;">
+          <h4 style="margin-bottom:15px; font-size:1.2rem;"><i class="fas fa-paper-plane" style="color:var(--accent);"></i> أرسل استفسارك مباشرة</h4>
+          <form id="contactForm">
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <input type="text" class="form-control" placeholder="الاسم الكريم" required>
+              <input type="tel" class="form-control" placeholder="رقم الهاتف للتواصل" required>
+              <textarea class="form-control" rows="4" placeholder="اكتب استفسارك أو رسالتك هنا..." required></textarea>
+              <button type="submit" class="btn btn-primary"><i class="fas fa-send"></i> إرسال الاستفسار الآن</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       تذييل الصفحة (Footer)
+       ====================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom:15px;">
+            <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="logo-text">
+              <h1 style="color:#fff;">معهد الرواد الدولي</h1>
+              <span>بناء أجيال المستقبل التقني</span>
+            </div>
+          </div>
+          <p>
+            المؤسسة التدريبية الرائدة في تأهيل الكوادر الشابة وتمكينهم من مهارات المستقبل في مجالات البرمجة، هندسة الويب، الأمن السيبراني، واللغات الحية.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#grades">استعلام النتائج والدرجات</a></li>
+            <li><a href="#elearning">منصة التعلم أونلاين</a></li>
+            <li><a href="#courses">دليل الدورات والبرامج</a></li>
+            <li><a href="#admission">شروط وإجراءات التسجيل</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>أهم البرامج</h4>
+          <ul class="footer-links">
+            <li><a href="#courses">هندسة الويب Full-Stack</a></li>
+            <li><a href="#courses">الأمن السيبراني والشبكات</a></li>
+            <li><a href="#courses">التصميم الجرافيكي والموشن</a></li>
+            <li><a href="#courses">دبلوم اللغة الإنجليزية</a></li>
+            <li><a href="#courses">الذكاء الاصطناعي والبيانات</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>الاعتمادات والتراخيص</h4>
+          <p style="font-size:0.85rem;">
+            مرخص من وزارة التعليم الفني والتدريب المهني - ترخيص رقم: 2012/589
+          </p>
+          <div style="background:rgba(255,255,255,0.06); padding:12px; border-radius:8px; font-size:0.85rem;">
+            <i class="fas fa-check-shield" style="color:var(--accent);"></i> شهاداتنا معمدة وقابلة للمصادقة لجميع الجهات الحكومية والخاصة.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © 2026 معهد الرواد الدولي للتدريب والتكنولوجيا - تصميم وبرمجة مهندس الويب: <strong>ردمان العامري</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ملف الجافاسكريبت للتشغيل والتفاعل -->
+  <script src="script.js"></script>
+</body>
+</html>
